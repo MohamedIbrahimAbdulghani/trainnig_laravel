@@ -42,12 +42,12 @@ Route::resource("posts", PostController::class);
 
 
 
-// Route::get("posts/create", function() {
-//     return view("posts_create");
-// });
-// Route::post("posts/show", function(Request $req) {
-//     return $req;
-// })->name("posts/show");
+Route::get("posts/create", function() {
+    return view("posts_create");
+});
+Route::post("posts/show", function(Request $req) {
+    return $req;
+})->name("posts/show");
 
 
 
